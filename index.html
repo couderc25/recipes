@@ -4,7 +4,6 @@
     <style>
       body {
         font-size: 100%;
-
       }
       h1 {
         font-size: 2.5em;
@@ -28,23 +27,24 @@
   </head>
   <body>
     <!--new recipe form -->
-    <div id="newrecipe" style="display: none;"> <!--remove "hidden" to show the entry text-->
+    <div id="newrecipe" style="display: none">
+      <!--remove "hidden" to show the entry text-->
       <!--<form action="/action_page.php">-->
-        <label for="category">select recipe category</label>
-        <select name="category" id="category">
-          <option value="breakfast">Breakfast</option>
-          <option value="entres">Entre</option>
-          <option value="sauces">Sauces</option>
-          <option value="treats">Treats</option>
-          <option value="drinks">Drinks</option>
-        </select>
-        <label for="title">title:</label>
-        <input type="text" id="title"><br><br>
-        <label for="recipe">recipe:</label>
-        <textarea name="recipetxt" id="recipe" cols="30" rows="10"></textarea>
-        <br>
-        <button id="submit">submit</button>
-        <!--<input type="submit" value="submit">-->
+      <label for="category">select recipe category</label>
+      <select name="category" id="category">
+        <option value="breakfast">Breakfast</option>
+        <option value="entres">Entre</option>
+        <option value="sauces">Sauces</option>
+        <option value="treats">Treats</option>
+        <option value="drinks">Drinks</option>
+      </select>
+      <label for="title">title:</label>
+      <input type="text" id="title" /><br /><br />
+      <label for="recipe">recipe:</label>
+      <textarea name="recipetxt" id="recipe" cols="30" rows="10"></textarea>
+      <br />
+      <button id="submit">submit</button>
+      <!--<input type="submit" value="submit">-->
 
       <!--</form>-->
     </div>
@@ -54,74 +54,47 @@
       <!--table of contents-->
       <h1>Les Recipès d’ Más Buen</h1>
 
-
       <!--breakfast table of contents-->
       <div class="brec">
         <h2>Breakfast</h2>
-        <ul class="categorybin" id="breakfast">
-         
-        </ul>
-     </div>
+        <ul class="categorybin" id="breakfast"></ul>
+      </div>
       <!--entre table of contents-->
       <h2>Entrès</h2>
-      <ul class="categorybin" id="entres" style="list-style: none">
-      
-      </ul>
-      
+      <ul class="categorybin" id="entres" style="list-style: none"></ul>
+
       <!--sauses table of contents-->
       <h2>sauces</h2>
-      <ul class="categorybin" id="sauces">
-
-      </ul>
-      
+      <ul class="categorybin" id="sauces"></ul>
 
       <!--treats table of contents-->
       <h2>Them Treats</h2>
-      <ul class="categorybin" id="treats">
-
-      </ul>
-      
-
-
+      <ul class="categorybin" id="treats"></ul>
 
       <!--drinks table of contents-->
       <h2>Dranks</h2>
-      <ul class="categorybin" id="drinks" style="list-style: none">
-
-      </ul>
-      
-      
+      <ul class="categorybin" id="drinks" style="list-style: none"></ul>
     </div>
     <!-- recipes div -->
     <div id="recipes">
       <!--Breakfast-->
       <h2>Breakfast</h2>
-      <div class="categorybin" id="breakfast-recipes">
-      </div>
-
+      <div class="categorybin" id="breakfast-recipes"></div>
 
       <!--entres-->
       <h2>Entrès</h2>
-      <div class="categorybin" id="entres-recipes">
-      </div>
-      
+      <div class="categorybin" id="entres-recipes"></div>
+
       <!--sauces-->
       <h2>Sauces</h2>
-      <div class="categorybin" id="sauces-recipes">
-      </div> -->
+      <div class="categorybin" id="sauces-recipes"></div>
       <!-- treats -->
       <h2>Treats</h2>
-      <div class="categorybin" id="treats-recipes">
-
-      </div>
+      <div class="categorybin" id="treats-recipes"></div>
       <!--drinks-->
       <h2>Dranks</h2>
-      <div class="categorybin" id="drinks-recipes">
-
-      </div>
-      </pre>drink3txt</p>
-      </div>
-    </div> 
+      <div class="categorybin" id="drinks-recipes"></div>
+    </div>
 
     <script src="main.js"></script>
   </body>
