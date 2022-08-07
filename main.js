@@ -7,25 +7,23 @@ function getrecipe() {
     let i=0
     const submit = document.getElementById('submit')
     const brec=document.getElementById('brec');
+    //listen for button click then pull data from form
     submit.addEventListener('click', () => {   
         let rectitle = document.getElementById('title')
         let recbody = document.getElementById('recipe')
         let reccategory = document.getElementById('category')
         const ul = document.getElementById(`${recipe.reccategory}`)
         const li = document.createElement('li')
-        // li.innerHTML=rectitle.value;
-        // ul.appendChild(li); 
-        console.log(reccategory)
+        //put data into array with keys i.e. title, body, category
         let body= {title:rectitle.value, body:recbody.value, category: reccategory.value}
-        console.log(body)
-        console.log(JSON.stringify(body))
+        //send data to server by turning it into json data(text) (server will decript)
         fetch('https://cedric-couder.npkn.net/nsxoqpnncs/',{
             method:'POST',
              body:JSON.stringify(body), 
             headers: {'Content-Type': 'application/json'}
         }
 
-        ).then(getdata)
+        ).then(getdata) //calls getdata after button has been clicked 
 
                 
 
@@ -51,6 +49,7 @@ function getdata(){
     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/').then((res) => {
         return res.json();
     }).then((data) => {
+        //erase all the stuff on the websit so that when everything is pulled for the server things are not duplicated
         let catbin = document.getElementsByClassName('categorybin')
         for (let index=0; index<catbin.length; index++){
             while (catbin[index].firstChild){
@@ -59,14 +58,12 @@ function getdata(){
         }
         
         for (let recipe of data.data) {
-            
-
-            
+            //adds title to table of contents as a hyper link and in the correct category
             let li = document.createElement('li');
             li.innerHTML = `<a href="#${recipe.title}">${recipe.title}</a>`;
             console.log(recipe.category)
             document.getElementById(recipe.category).appendChild(li);
-
+            // adds recipe to recipe section and in correct 
             let div = document.createElement('div');
             div.innerHTML = `<h3 id="${recipe.title}">${recipe.title}</h3>
             <p class="insturction"><pre>
