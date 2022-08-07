@@ -29,24 +29,22 @@
     <!--new recipe form -->
     <div id="newrecipe" style="display: none">
       <!--remove "hidden" to show the entry text-->
-      <!--<form action="/action_page.php">-->
-      <label for="category">select recipe category</label>
-      <select name="category" id="category">
-        <option value="breakfast">Breakfast</option>
-        <option value="entres">Entre</option>
-        <option value="sauces">Sauces</option>
-        <option value="treats">Treats</option>
-        <option value="drinks">Drinks</option>
-      </select>
-      <label for="title">title:</label>
-      <input type="text" id="title" /><br /><br />
-      <label for="recipe">recipe:</label>
-      <textarea name="recipetxt" id="recipe" cols="30" rows="10"></textarea>
-      <br />
-      <button id="submit">submit</button>
-      <!--<input type="submit" value="submit">-->
-
-      <!--</form>-->
+      <form>
+        <label for="category">Select recipe category</label>
+        <select name="category" id="category">
+          <option value="breakfast">Breakfast</option>
+          <option value="entres">Entre</option>
+          <option value="sauces">Sauces</option>
+          <option value="treats">Treats</option>
+          <option value="drinks">Drinks</option>
+        </select>
+        <label for="title">Title:</label>
+        <input type="text" id="title" /><br /><br />
+        <label for="recipe">Recipe:</label>
+        <textarea name="recipetxt" id="recipe" cols="30" rows="10"></textarea>
+        <br />
+        <button id="submit">Submit</button>
+      </form>
     </div>
     <button id="clickBtn">newentry</button>
     <!-- table of contents div -->
@@ -64,7 +62,7 @@
       <ul class="categorybin" id="entres" style="list-style: none"></ul>
 
       <!--sauses table of contents-->
-      <h2>sauces</h2>
+      <h2>Sauces</h2>
       <ul class="categorybin" id="sauces"></ul>
 
       <!--treats table of contents-->
