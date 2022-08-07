@@ -16,6 +16,9 @@ function getrecipe() {
         const li = document.createElement('li')
         //put data into array with keys i.e. title, body, category
         let body= {title:rectitle.value, body:recbody.value, category: reccategory.value}
+        //sends error message if no title is input
+        if (body.title) {
+            document.getElementById('error').innerHTML = ''
         //send data to server by turning it into json data(text) (server will decript)
         fetch('https://cedric-couder.npkn.net/nsxoqpnncs/',{
             method:'POST',
@@ -24,7 +27,9 @@ function getrecipe() {
         }
 
         ).then(getdata) //calls getdata after button has been clicked 
-
+    } else {
+        document.getElementById('error').innerHTML ='Please enter a title.'
+    }
                 
 
    });
