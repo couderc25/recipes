@@ -1,27 +1,36 @@
 body {
-    font-size: 100%;
-  }
-  h1 {
-    font-size: 2.5em;
-  }
-  #pageTitle {
-    text-decoration: underline;
-  }
-  /* content catagory style */
-  /* #contents h2 styles all h2 within 'contents' div */
-  #contents h2 { 
+  font-size: 100%;
+}
+h1 {
+  font-size: 2.5em;
+}
+#pageTitle {
+  text-decoration: underline;
+}
+
+a {
+  font-size: 1.2em;
+}
+p {
+  font-size: 0.8em;
+}
+.insturction {
+  margin-left: 2em;
+}
+/* new recipe form */
+    /* title line */
+    .titleEntry {
+    margin-top: 5px;
+    }
+
+/* table of contents div */
+    /* content catagory style */
+    /* #contents h2 styles all h2 within 'contents' div */
+    #contents h2 {
     font-size: 1.4em;
-  } 
-  /* recipe catagory style*/
-  #recipes h2 {
+    }
+/* recipes div */
+    /* recipe catagory style*/
+    #recipes h2 {
     font-size: 1.8em;
-  }
-  a {
-    font-size: 1.2em;
-  }
-  p {
-    font-size: 0.8em;
-  }
-  .insturction {
-    margin-left: 2em;
-  }
+    }
