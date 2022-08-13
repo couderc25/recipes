@@ -41,12 +41,15 @@
       <!-- <form> -->
         <label for="category">Select recipe category</label>
         <select name="category" id="category">
+          <option value="selectClass">Recipe Type</option>
           <option value="breakfast">Breakfast</option>
           <option value="entres">Entre</option>
           <option value="sauces">Sauces</option>
           <option value="treats">Treats</option>
           <option value="drinks">Drinks</option>
+          
         </select>
+        <p id="categoryError"></p>
         <br />
         <label class="titleEntry" for="title">Title:</label>
         <input class="titleEntry" type="text" id="title" />
@@ -55,7 +58,7 @@
         <br />
         <textarea name="recipetxt" id="recipe" cols="30" rows="10"></textarea>
         <br />
-        <p id="error"></p>
+        <p id="titleError"></p>
         <button id="submit">Submit</button>
       <!-- </form> -->
     </div>
