@@ -1,0 +1,38 @@
+import { store } from 'napkin'
+
+const key = 'recipes'
+
+/**
+ * Expose an endpoint with two allowed HTTP Methods: GET and POST
+ * 
+ * GET: get the number of times the button has been pressed
+ * POST: press the button
+ * 
+ * @param {NapkinRequest} req
+ * @param {NapkinResponse} res
+ */
+//store.put(key, [])//use to reset website content
+export default async (req, res) => {
+  console.log(req)
+  if (req.method === 'GET') {
+    const { data } = (await store.get(key)) || []
+    console.log(data)
+    res.json({ data })
+  } else if (req.method === 'POST') {
+    let { data } = (await store.get(key)) || []
+    let title = req.body.title
+    let body = req.body.body
+    let category = req.body.category
+    data.push({
+      title: title,
+      body: body,
+      category: category
+    })
+
+    await store.put(key, data)
+    res.json({ pressed: true })
+  } else {
+    throw new Error("Only [GET, POST] HTTP methods allowed.")
+  }
+}
+
