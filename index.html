@@ -3,13 +3,19 @@
   <head>
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
-      body {
+       /*body {
         font-size: 100%;
       }
       h1 {
         font-size: 2.5em;
       }
-      h2 {
+      #contents h2 {
+        font-size: 1.4em;
+      }
+      #contents h2 {
+        font-size: 1.4em;
+      }
+      #recipes h2 {
         font-size: 1.8em;
       }
       a {
@@ -20,7 +26,7 @@
       }
       .insturction {
         margin-left: 2em;
-      }
+      } */
     </style>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0" />
@@ -28,7 +34,7 @@
   </head>
   <body>
     
-    <h1>Les Recipès d’ Más Buen</h1>
+    <h1 id="pageTitle">Les Recipès d’ Más Buen</h1>
     <!--new recipe form -->
     <div id="newrecipe" style="display: none">
       <!--remove "hidden" to show the entry text-->
@@ -53,17 +59,16 @@
         <button id="submit">Submit</button>
       <!-- </form> -->
     </div>
-    <button id="clickBtn">newentry</button>
+    <button id="clickBtn">Add New Recipe</button>
     <!-- table of contents div -->
     <div id="contents">
       <!--table of contents-->
       <h1>Contents</h1>
 
       <!--breakfast table of contents-->
-      <div class="brec">
-        <h2>Breakfast</h2>
-        <ul class="categorybin" id="breakfast"></ul>
-      </div>
+      <h2>Breakfast</h2>
+      <ul class="categorybin" id="breakfast"></ul>
+    
       <!--entre table of contents-->
       <h2>Entrès</h2>
       <ul class="categorybin" id="entres" style="list-style: none"></ul>
@@ -101,6 +106,7 @@
       <h2>Dranks</h2>
       <div class="categorybin" id="drinks-recipes"></div>
     </div>
+
 
     <script src="main.js"></script>
   </body>

@@ -1,0 +1,27 @@
+body {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  #pageTitle {
+    text-decoration: underline;
+  }
+  /* content catagory style */
+  /* #contents h2 styles all h2 within 'contents' div */
+  #contents h2 { 
+    font-size: 1.4em;
+  } 
+  /* recipe catagory style*/
+  #recipes h2 {
+    font-size: 1.8em;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .insturction {
+    margin-left: 2em;
+  }
