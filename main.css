@@ -17,12 +17,13 @@ p {
 .insturction {
   margin-left: 2em;
 }
+
 /* new recipe form */
     /* title line */
     .titleEntry {
     margin-top: 5px;
     }
-
+      
 /* table of contents div */
     /* content catagory style */
     /* #contents h2 styles all h2 within 'contents' div */

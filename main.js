@@ -1,6 +1,6 @@
 
 const button=document.getElementById('clickBtn');
-const divList=document.getElementById('newrecipe');
+const divList=document.getElementById('newRecipe');
 
 //functions
 function getrecipe() {
@@ -41,9 +41,11 @@ function getrecipe() {
 button.addEventListener('click', function ()  {
     if (divList.style.display === 'none') {     
         divList.style.display = 'block';
+        document.getElementById('clickBtn').innerHTML= 'Close'
         
     } else {
         divList.style.display = 'none';
+        document.getElementById('clickBtn').innerHTML= 'Add New Recipe'
     }
 });
 
