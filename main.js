@@ -31,7 +31,7 @@ function getrecipe() {
             headers: {'Content-Type': 'application/json'}
         }
 
-        ).then(getdata) //calls getdata after button has been clicked 
+        ).then(clearForm).then(getdata) //calls getdata after button has been clicked 
         }   
         else {
             document.getElementById('error').innerHTML ='Please enter a title.'
@@ -88,3 +88,10 @@ function getdata(){
     });
 }
 getdata();
+
+// clearform function
+function clearForm(){
+    document.getElementById('title').value=''
+    document.getElementById('recipe').value = ''
+    document.getElementById('category').value='selectClass'
+}
