@@ -18,11 +18,11 @@ function getrecipe() {
         let body= {title:rectitle.value, body:recbody.value, category: reccategory.value}
         //sends error message if no category selected
         if (body.category == 'selectClass'){
-            document.getElementById('categoryError').innerHTML = 'Please select recipe type'
+            document.getElementById('inputError').innerHTML = 'Please select recipe type'
         }
         //sends error message if no title is input
         else if (body.title) {
-            document.getElementById('titleError').innerHTML = ''
+            document.getElementById('inputError').innerHTML = ''
             
         //send data to server by turning it into json data(text) (server will decript)
         fetch('https://cedric-couder.npkn.net/nsxoqpnncs/',{
@@ -34,7 +34,7 @@ function getrecipe() {
         ).then(clearForm).then(getdata) //calls getdata after button has been clicked 
         }   
         else {
-            document.getElementById('titleError').innerHTML ='Please enter a title.'
+            document.getElementById('inputError').innerHTML ='Please enter a title.'
     }
                 
 
@@ -79,9 +79,9 @@ function getdata(){
             // adds recipe to recipe section and in correct 
             let div = document.createElement('div');
             div.innerHTML = `<h3 id="${recipe.title}">${recipe.title}</h3>
-            <p class="instruction"><pre>
-            ${recipe.body}
-            </pre></p>`;
+            <p class="instruction">
+                <pre>${recipe.body}</pre>
+            </p>`;
             document.getElementById(`${recipe.category}-recipes`).appendChild(div);
 
         }
@@ -94,4 +94,5 @@ function clearForm(){
     document.getElementById('title').value=''
     document.getElementById('recipe').value = ''
     document.getElementById('category').value='selectClass'
+    document.getElementById('categoryError').innerHTML = ''
 }

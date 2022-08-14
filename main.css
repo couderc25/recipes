@@ -1,10 +1,11 @@
-/*body {
+body {
   font-size: 100%;
   max-width: 1000px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}*/
+  padding: 20px;
+}
 h1 {
   font-size: 2.5em;
 }
@@ -27,6 +28,10 @@ p {
     .titleEntry {
     margin-top: 5px;
     }
+    /* recipe body box */
+    #recipe{
+        width: 100%;
+    }
       
 /* table of contents div */
     /* content catagory style */
@@ -37,14 +42,26 @@ p {
     #contents ul {
         list-style: none
     }
+/* new rec button */
+#clickBtn {
+    margin-top: 5px;
+}
 /* recipes div */
     /* recipe catagory style*/
     #recipes h2 {
     font-size: 1.8em;
     }
 
-#clickBtn {
-    margin-top: 5px;
-    
 
-}
+
+    /* recipe body format */
+    pre{
+        overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+        max-width: 1000px;
+        margin-left: 15px;
+    }
