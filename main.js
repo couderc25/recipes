@@ -31,7 +31,7 @@ function getrecipe() {
             headers: {'Content-Type': 'application/json'}
         }
 
-        ).then(clearForm).then(getdata) //calls getdata after button has been clicked 
+        ).then(getdata).then(clearForm) //calls getdata after button has been clicked 
         }   
         else {
             document.getElementById('inputError').innerHTML ='Please enter a title.'
