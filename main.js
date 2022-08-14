@@ -34,7 +34,7 @@ function getrecipe() {
         ).then(clearForm).then(getdata) //calls getdata after button has been clicked 
         }   
         else {
-            document.getElementById('error').innerHTML ='Please enter a title.'
+            document.getElementById('titleError').innerHTML ='Please enter a title.'
     }
                 
 
