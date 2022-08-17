@@ -62,6 +62,7 @@ function getdata(){
     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/').then((res) => {
         return res.json();
     }).then((data) => {
+        console.log(data)
         //erase all the stuff on the websit so that when everything is pulled for the server things are not duplicated
         let catbin = document.getElementsByClassName('categorybin')
         for (let index=0; index<catbin.length; index++){
@@ -96,3 +97,46 @@ function clearForm(){
     document.getElementById('category').value='selectClass'
     document.getElementById('categoryError').innerHTML = ''
 }
+
+
+
+
+
+
+// // //////////////////////////////////////////////////////
+
+// //delete stuff maybe i can get this to work one day??
+
+
+// function deletRecipe (){
+//     const deleteItem=document.getElementById('delete')
+    
+//     deleteItem.addEventListener('click', () => {
+    
+//         fetch('https://cedric-couder.npkn.net/nsxoqpnncs/').then((res) => {
+//                     return res.json();
+//                 }).then((data) => {
+//                     let itemName = document.getElementById('itemName');
+//                     console.log(itemName)
+//                     let newData=data.data
+//                     console.log(newData)
+//                     let updatedData = newData.filter(x => x.title != itemName.value);
+//                     console.log(updatedData)
+//     console.log('test')
+    
+    
+//     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/', { 
+//         method: 'DELETE'
+//     });
+    
+//     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/',{
+//                 method:'POST',
+//                  body:JSON.stringify(updatedData), 
+//                 headers: {'Content-Type': 'application/json'}
+//             })
+//         })
+//     })}
+    
+    
+    
+// deletRecipe()
