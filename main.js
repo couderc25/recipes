@@ -72,6 +72,7 @@ function getdata(){
         console.log(data)
         //erase all the stuff on the websit so that when everything is pulled for the server things are not duplicated
         let catbin = document.getElementsByClassName('categorybin')
+
         for (let index=0; index<catbin.length; index++){
             while (catbin[index].firstChild){
                 console.log(index)
