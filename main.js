@@ -45,6 +45,10 @@ function getrecipe() {
 
 //show/hide input form 
 button.addEventListener('click', function ()  {
+    // var password = document.getElementById('password')
+    // var correctPassword = "1212";
+    // console.log(password)
+    // if (password === correctPassword){
     if (divList.style.display === 'none') {     
         divList.style.display = 'block';
         document.getElementById('clickBtn').innerHTML= 'Close'
@@ -53,6 +57,9 @@ button.addEventListener('click', function ()  {
         divList.style.display = 'none';
         document.getElementById('clickBtn').innerHTML= 'Add New Recipe'
     }
+    // else{
+    //     document.getElementById('pswrdError').innerHTML = 'Incorrect passowrd'
+    // }
 });
 
 //function to get title text from new recipe form
@@ -67,6 +74,7 @@ function getdata(){
         let catbin = document.getElementsByClassName('categorybin')
         for (let index=0; index<catbin.length; index++){
             while (catbin[index].firstChild){
+                console.log(index)
                 catbin[index].removeChild(catbin[index].firstChild)
             }
         }
