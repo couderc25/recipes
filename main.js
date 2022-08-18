@@ -44,6 +44,7 @@ function getrecipe() {
 
 
 //show/hide input form 
+
 button.addEventListener('click', function ()  {
     // var password = document.getElementById('password')
     // var correctPassword = "1212";
