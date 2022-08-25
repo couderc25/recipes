@@ -89,3 +89,11 @@ p {
         max-width: 1000px;
         margin-left: 15px;
     }
+
+/* to top button */
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+}

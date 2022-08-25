@@ -109,13 +109,23 @@ function clearForm(){
 }
 
 
+//back to top botton
+var toTopBtn = documetn.getElementById('toTopBtn');
+window.onscroll = function(){
+    if(document.body.scrollTop > 30 ||
+        document.documentElement.scrollTop > 30){
+            toTopBtn.style.dilplay = 'block';
+             }
+             else {
+                toTopBtn.style.display = "none";
+             }
+}
 
-
-
-
-// // //////////////////////////////////////////////////////
-
-// //delete stuff maybe i can get this to work one day??
+function jumpToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    //delete stuff maybe i can get this to work one day??
 
 
 // function deletRecipe (){
