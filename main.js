@@ -19,6 +19,8 @@ function getrecipe() {
         //sends error message if no category selected
         if (body.category == 'selectClass'){
             document.getElementById('inputError').innerHTML = 'Please select recipe type'
+        }else if (/\s$/.test(body.title)){
+            document.getElementById('inputError').innerHTML = 'Please remove space at end of title'
         }
         //sends error message if no title is input
         else if (body.title) {
