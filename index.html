@@ -4,30 +4,7 @@
     <link rel="icon" href="tab pictures/IMG-3957.png">
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
-       /*body {
-        font-size: 100%;
-      }
-      h1 {
-        font-size: 2.5em;
-      }
-      #contents h2 {
-        font-size: 1.4em;
-      }
-      #contents h2 {
-        font-size: 1.4em;
-      }
-      #recipes h2 {
-        font-size: 1.8em;
-      }
-      a {
-        font-size: 1.2em;
-      }
-      p {
-        font-size: 0.8em;
-      }
-      .insturction {
-        margin-left: 2em;
-      } */
+      
     </style>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0" />
@@ -64,6 +41,7 @@
           <option value="sauces">Sauces</option>
           <option value="treats">Treats</option>
           <option value="drinks">Drinks</option>
+          <option value="misc">Misc/Notes</option>
         </select>
         <br />
         <label class="titleEntry" for="title">Title:</label>
@@ -110,6 +88,9 @@
       <!--drinks table of contents-->
       <h2>Drinks</h2>
       <ul class="categorybin" id="drinks" style="list-style: none"></ul>
+      <!--drinks table of contents-->
+      <h2>Misc/Notes</h2>
+      <ul class="categorybin" id="misc" style="list-style: none"></ul>
     </div>
     <!-- recipes div -->
     <div id="recipes">
@@ -135,6 +116,9 @@
       <!--drinks-->
       <h2>Drinks</h2>
       <div  class="categorybin" class="recipeBody" id="drinks-recipes"></div>
+      <!--misc-->
+      <h2>Misc/Notes</h2>
+      <div  class="categorybin" class="recipeBody" id="misc-recipes"></div>
     </div>
     <button onclick="jumpToTop()" id="toTopBtn">To Top</button>
 
