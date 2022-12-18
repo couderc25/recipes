@@ -92,6 +92,7 @@ p {
 
 /* to top button */
 #toTopBtn {
+  background-color: rgb(132, 79, 181);
   position: fixed;
   bottom: 20px;
   right: 20px;
