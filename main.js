@@ -54,7 +54,7 @@ button.addEventListener('click', function ()  {
     // if (password === correctPassword){
     if (divList.style.display === 'none') {     
         divList.style.display = 'block';
-        document.getElementById('clickBtn').innerHTML= 'Close'
+        document.getElementById('clickBtn').innerHTML= 'Cancel'
         
     } else {
         divList.style.display = 'none';

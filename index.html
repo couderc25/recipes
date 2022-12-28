@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento">
-    <link rel="icon" href="tab pictures/RMBLogo.png">
+    <link rel="icon" href="tab pictures/RMBLogo 6.jpg">
     <link href="main.css" rel="stylesheet" type="text/css">
     <style>
       
@@ -33,7 +33,11 @@
     <div id="newRecipe" style="display: none">
       <!--remove "hidden" to show the entry text-->
       <!-- <form> -->
-        <label for="category">Select recipe category</label>
+
+        <label class="titleEntry" for="title"></label>
+        <input class="titleEntry" type="text" id="title" placeholder="Title" />
+        <br />
+        <label for="category"></label>
         <select name="category" id="category">
           <option value="selectClass">Recipe Type</option>
           <option value="breakfast">Breakfast</option>
@@ -45,13 +49,12 @@
           <option value="misc">Misc/Notes</option>
           
         </select>
+        
+        
+    
+        <label for="recipe"></x`label>
         <br />
-        <label class="titleEntry" for="title">Title:</label>
-        <input class="titleEntry" type="text" id="title" />
-        <br />
-        <label for="recipe">Recipe:</x`label>
-        <br />
-        <textarea name="recipetxt" id="recipe" width="100%" rows="10"></textarea>
+        <textarea name="recipetxt" id="recipe" width="100%" rows="10" placeholder="Recipe" ></textarea>
         <br />
         <p id="inputError"></p>
         <button id="submit">Submit</button>
@@ -59,7 +62,7 @@
     </div>
     <!-- <label for="password">Password:</label>
     <input type="text" id="password" /> -->
-    <button id="clickBtn">Add New Recipe</button>
+    <button id="clickBtn">New Recipe</button>
     <!-- <br/>
     <p id="pswrdError"></p> -->
     <!-- table of contents div -->

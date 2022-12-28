@@ -5,6 +5,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  background-color: rgba(247, 227, 202, 0.066);
   
 }
 h1 {
@@ -38,6 +39,52 @@ p {
     #recipe{
         width: 100%;
     }
+   #submit{
+    margin-top: 5px;
+    border-radius: 8px;
+    border-width: none;
+    border: none;   
+    outline: none;
+    border-color: rgba(160, 159, 159, 0.45);
+    background-color: rgba(87, 38, 38, 0.1);      
+    color: hsl(0, 0%, 3%); 
+    padding: 6px;   
+    font-size: .9em;
+    font-weight: 600;
+    font-family: 'Quattrocento';
+   }
+   #category{
+    margin-top: 5px;
+    border: none;
+    border-width: none;
+    outline: none;
+    border-color: rgba(160, 159, 159, 0.45);
+    background-color: rgba(247, 227, 202, 0.066); 
+    color: hsl(0, 0%, 3%); 
+    padding: 6px;
+    padding-left: 0%;
+    padding-top: 3px;
+    font-size: .9em;
+    font-weight: 600;
+    font-family: 'Quattrocento';
+   }
+   #title{
+    margin-top: 5px;
+    border-radius: 8px;
+    border-width: .01em;
+    outline: none;
+    border-color: rgba(160, 159, 159, 0.45);
+    background-color: rgba(247, 227, 202, 0.066);   
+    color: hsl(0, 0%, 3%); 
+    padding: 6px;   
+    font-size: .9em;
+    font-weight: 600;
+    font-family: 'Quattrocento';
+   }
+   #category:hover{
+    text-decoration: underline;
+   }
+   
       
 /* table of contents div */
     /* content catagory style */
@@ -72,7 +119,28 @@ p {
 
 /* new rec button */
 #clickBtn {
+    /* margin-top: 5px;
+    border-radius: 8px;
+    border-width: .04em;
+    background-color: rgb(88, 15, 28);
+    color: hsl(208, 100%, 97%); 
+    padding: 6px; */
     margin-top: 5px;
+    border-radius: 8px;
+    border-width: none;
+    outline: none;
+    border: none;
+    
+    background-color: rgba(87, 38, 38, 0.1);  
+    color: hsl(0, 0%, 3%); 
+    padding: 6px;
+    font-size: .9em;
+    
+    font-weight: 600;
+    font-family: 'Quattrocento';
+}
+#clickBtn:hover{
+  text-decoration: underline;
 }
 /* recipes div */
     /* recipe catagory style*/
@@ -113,7 +181,9 @@ p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
+  color: rgb(252, 253, 254);
+  border-color: rgb(135, 43, 158);
+  border-radius: 8px;
 }
 
 
