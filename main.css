@@ -8,6 +8,23 @@ body {
   background-color: rgba(247, 227, 202, 0.066);
   
 }
+
+.header{
+  /* background-image: url('tab pictures/IMG-3735.png'); */
+  background-image: linear-gradient(rgba(10,90,45,0.8), rgba(90,80,70,0.6)), url("tab pictures/image_6487327.JPG");
+  background-size: cover;
+  width: relative;
+  position: relative;
+  height: 150px;
+}   
+.headerText{
+text-align: left;
+position: relative;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+
+}
 h1 {
   font-size: 2.5em;
   font-family: 'Quattrocento';
