@@ -58,7 +58,7 @@ button.addEventListener('click', function ()  {
         
     } else {
         divList.style.display = 'none';
-        document.getElementById('clickBtn').innerHTML= 'Add New Recipe'
+        document.getElementById('clickBtn').innerHTML= 'New Recipe'
     }
     // else{
     //     document.getElementById('pswrdError').innerHTML = 'Incorrect passowrd'
