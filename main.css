@@ -11,17 +11,17 @@ body {
 
 .header{
   /* background-image: url('tab pictures/IMG-3735.png'); */
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.594), transparent 70%), url("tab pictures/image_6487327.JPG");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.779), transparent 70%), url("tab pictures/header.jpg");
   /* background-image: linear-gradient(white,rgba(0,0,0,)), url("tab pictures/image_6487327.JPG"); */
-
+  background-repeat: no-repeat;
   background-size: cover;
   width: relative;
   position: relative;
-  height: 150px;
+  height: 250px;
 }   
 .headerText{
 position: relative;
-top: 70%;
+top: 35%; 
 left: 55%;
 transform: translate(-50%, -50%);
 
