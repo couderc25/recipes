@@ -18,6 +18,7 @@ body {
   width: relative;
   position: relative;
   height: 250px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 10px -6px;
 }   
 .headerText{
 position: relative;
@@ -171,7 +172,6 @@ p {
     }
     #recipes h1 {
       text-decoration: underline;
-      font-style: italic;
       margin-left: 43%;
       font-family: 'Quattrocento';
       
@@ -202,7 +202,15 @@ p {
   right: 20px;
   color: rgb(252, 253, 254);
   border-color: rgb(135, 43, 158);
-  border-radius: 8px;
-}
+  border-radius: 8px;}
+  .footer{
+    /* */
+    background-image:  url("tab\ pictures/HeaderImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: relative;
+    position: relative;
+    height: 140px;
+  }
 
 
