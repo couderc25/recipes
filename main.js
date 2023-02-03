@@ -48,10 +48,7 @@ function getrecipe() {
 //show/hide input form 
 
 button.addEventListener('click', function ()  {
-    // var password = document.getElementById('password')
-    // var correctPassword = "1212";
-    // console.log(password)
-    // if (password === correctPassword){
+
     if (divList.style.display === 'none') {     
         divList.style.display = 'block';
         document.getElementById('clickBtn').innerHTML= 'Cancel'
@@ -127,38 +124,4 @@ function jumpToTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-    //delete stuff maybe i can get this to work one day??
-
-
-// function deletRecipe (){
-//     const deleteItem=document.getElementById('delete')
-    
-//     deleteItem.addEventListener('click', () => {
-    
-//         fetch('https://cedric-couder.npkn.net/nsxoqpnncs/').then((res) => {
-//                     return res.json();
-//                 }).then((data) => {
-//                     let itemName = document.getElementById('itemName');
-//                     console.log(itemName)
-//                     let newData=data.data
-//                     console.log(newData)
-//                     let updatedData = newData.filter(x => x.title != itemName.value);
-//                     console.log(updatedData)
-//     console.log('test')
-    
-    
-//     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/', { 
-//         method: 'DELETE'
-//     });
-    
-//     fetch('https://cedric-couder.npkn.net/nsxoqpnncs/',{
-//                 method:'POST',
-//                  body:JSON.stringify(updatedData), 
-//                 headers: {'Content-Type': 'application/json'}
-//             })
-//         })
-//     })}
-    
-    
-    
-// deletRecipe()
+  
