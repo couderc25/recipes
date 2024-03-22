@@ -104,7 +104,9 @@ p {
    #category:hover{
     text-decoration: underline;
    }
-   
+   #submit:hover{
+    text-decoration: underline;
+   }
       
 /* table of contents div */
     /* content catagory style */
